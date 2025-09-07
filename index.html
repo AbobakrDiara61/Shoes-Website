@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="icon" type="image/x-icon" href="/src/assets/shoes.ico" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Nike</title>
+    </head>
+    <body>
+        <header class="py-4.5 px-3 absolute z-10 w-full">
+          <nav class="flex items-center justify-between w-full max-w-7xl mx-auto max-lg:w-4xl">
+            <a class="logo img-wrapper w-30" href="/">
+              <img 
+                src="src/assets/images/logo.png" 
+                alt="logo"
+                class="w-full h-full object-cover"
+              >
+            </a>
+            <ul class="links flex align-center max-md:opacity-0 max-md:invisible ">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Products</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+            <button class="icon-wrapper hidden max-md:block toggle-btns cursor-pointer">
+              <img 
+                src="src/assets/icons/menu.svg" 
+                alt="menu"
+                class="w-7h-7 h-7"  
+              >
+            </button>
+          </nav>
+        </header>
+        <script type="module" src="/src/index.js"></script>
+        <script type="module" src="/src/main.jsx"></script>
+    </body>
+</html>
