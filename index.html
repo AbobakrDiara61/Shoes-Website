@@ -3,12 +3,14 @@
     <head>
         <meta charset="UTF-8" />
         <link rel="icon" type="image/x-icon" href="/src/assets/shoes.ico" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Nike</title>
     </head>
     <body>
-        <header class="py-4.5 px-3 absolute z-10 w-full">
-          <nav class="flex items-center justify-between w-full max-w-7xl mx-auto max-lg:w-4xl">
+        <header class="px-3 z-10 w-full bg-slate-100">
+          <nav class="flex items-center justify-between w-full h-24 xl:max-w-7xl mx-auto lg:max-w-4xl">
             <a class="logo img-wrapper w-30" href="/">
               <img 
                 src="src/assets/images/logo.png" 
@@ -31,6 +33,54 @@
             </button>
           </nav>
         </header>
+
+
+        <main class="px-3 mt-5 w-full xl:max-w-7xl mx-auto lg:max-w-4xl font-montserrat">
+          <section class="flex items-center justify-between w-full  max-lg:flex-col gap-y-10">
+            <div class="basis-1/2 ">
+              <p class="text-lg text-orange-500">Our Summer Collection</p>
+              <h1 class="text-6xl font-bold mt-10 max-sm:text-4xl pr-4">
+                <span class="lg:bg-white rounded-3xl whitespace-nowrap">The New Arrival</span> <br>
+                <span class="text-orange-600 inline-block mt-5">Nike</span> Shoes
+              </h1>
+              <p class="my-5 text-slate-600 font-medium ">Discover the latest Nike arrivals, Quality and Comfort</p>
+              <button class="py-2 px-6 bg-orange-600 text-white font-medium text-lg rounded-full hover:bg-orange-700 duration-300 transition-colors cursor-pointer">
+                Shop Now 
+                <span class="ml-2 w-7 h-7 bg-white text-orange-600 inline-flex justify-center items-center rounded-full">
+                  <i class="fa-solid fa-arrow-right"></i>
+                </span>
+              </button>
+    
+              <div class="stats flex flex-wrap items-center justify-start gap-x-10 mt-7">
+                <h2>
+                  1K+ <span>Brands</span>
+                </h2>
+                <h2>
+                  500+ <span>Shoes</span>
+                </h2>
+                <h2>
+                  250K+ <span>Customers</span>
+                </h2>
+              </div>
+            </div>
+            <div class="carousel grow w-full basis-1/2 min-w-0">
+              <img src="./src/assets/images/sneakers00.jpg" alt="banner shoes" class="rounded-4xl max-w-full">
+              <div class="img-bullets flex items-center justify-center gap-x-5 -mt-20 w-full px-3">
+                <div class="img-wrapper">
+                  <img src="./src/assets/images/sneakers00.jpg" alt="shoes image" data-index="0">
+                </div> 
+                <div class="img-wrapper">
+                  <img src="./src/assets/images/sneakers01.jpg" alt="shoes image" data-index="1">
+                </div> 
+                <div class="img-wrapper">
+                  <img src="./src/assets/images/sneakers02.jpg" alt="shoes image" data-index="2">
+                </div> 
+              </div>
+            </div>
+          </section>
+
+          
+        </main>
         <script type="module" src="/src/index.js"></script>
         <script type="module" src="/src/main.jsx"></script>
     </body>
